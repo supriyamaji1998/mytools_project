@@ -1,9 +1,9 @@
 // console.log('this is java script news project...');
 
 const newsAccordion = document.getElementById('accordionNews');
-const APIKey = 'ada9aff0f48406f4e2a54067a7bc909d';
+const APIKey2= 'ada9aff0f48406f4e2a54067a7bc909d';
 const APIKey1 = '1a51ef6102ed78e32969618c2258dc89';
-const APIKey2 = '155cf00389a2c544311e86c70edb8684';
+const APIKey = '155cf00389a2c544311e86c70edb8684';
 const xhr = new XMLHttpRequest();
 
 
