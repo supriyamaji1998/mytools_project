@@ -1,0 +1,16 @@
+#service-container::before{
+
+    height: calc(390vh - 15%);
+    
+}
+/* #navbar ul{
+    display: inline-block;
+    position: fixed;
+    width: 100vw;
+    height: 59vh;
+    background: rgb(41, 45, 83);
+    text-align: center;
+    top: 61px;
+    left: -100%;
+    transition: all .5s;
+} */

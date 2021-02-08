@@ -1,0 +1,12 @@
+.background{
+    background-image:url('../img/bg-3.jpg');
+    background-size: 100%;
+}
+#notes{
+    background-color: #5cb2eb;
+    background-size:  100%;
+}
+.card{
+    background-color: rgb(90, 133, 133);
+    /* border: 3px solid black; */
+}

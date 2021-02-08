@@ -1,0 +1,53 @@
+
+.container{
+    
+    margin: 2px;
+    padding: 0px 4px;
+    
+}
+.calculator{
+    padding: 10px 0px;
+    border: 3px solid black;
+}
+#screen{
+    font-size: 12px;
+    /* width:140px ; */
+    border: 2px solid black;
+}
+.parent{
+    
+    height: calc(100vh - 80px);
+}
+.parent h1{
+ font-size: 20px;
+}
+button{
+    height: 40px;
+    width: 44px;
+    margin: 1px;
+    font-size: 14px;
+    border: 2.5px solid rgb(43, 44, 44);
+    
+}
+#backspace{
+    height: 25px;
+    width: 33px;
+    /* width: px; */
+    font-size: 9px;
+    
+}
+#addition{
+    height: 84px;
+}
+#submit{
+    width: 92px;
+    
+}
+#parentScreen{
+    font-size: 14px;
+    height: 40px;
+    width: 190px;
+    margin: 1.5px;
+    border: 2px solid #564242;
+    
+}

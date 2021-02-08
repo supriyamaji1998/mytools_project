@@ -1,0 +1,45 @@
+
+#navbar{
+    flex-direction:row-reverse;
+}
+#navbar .checkBtn{
+        display: block;
+        margin-right: 16px;
+     }
+#navbar ul{
+    display: inline-block;
+    position: fixed;
+    width: 100vw;
+    height: 59vh;
+    background: rgb(41, 45, 83);
+    text-align: center;
+    top: 61px;
+    left: -100%;
+    transition: all .5s;
+}
+
+#navbar ul li a{
+    font-size:1.2rem;
+    margin: 8px;
+}
+#navbar ul li a:hover,a.active{
+    background:none;
+    color:sienna;
+}
+#check:checked ~ ul{
+    left: 0%;
+}
+#logo{
+    margin-right: calc(100vw - 110px); 
+}
+#aboutme-section .bg::before{
+    margin: 30px;
+} 
+#aboutme-section .bg{
+    margin-top: 30px;
+}
+#service-container::before{
+
+    height: calc(355vh - 20%);
+    
+}

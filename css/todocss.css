@@ -1,0 +1,16 @@
+.background{
+    background-image:url('../img/bg-11.jpg');
+    background-size: 100%;
+}
+.items{
+    background-color:  #eeecf0;
+    background-size:  100%;
+}
+.box{
+    padding: 30px 40px;
+    background-color: rgb(90, 133, 133);
+    /* border: 1px solid black; */
+}
+#titleHelp{
+    color: white;
+}

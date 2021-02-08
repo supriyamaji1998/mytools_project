@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/todocss.css">
+
+    <title>To-Do-Welcome to to do list</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyTools</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../html/noteBook.html">NoteBook</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/todo.html">ToDo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../html/clockIndex.html">Clock</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../html/calculator.html">Calculator</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../html/cvScreener.html">CV Screener</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../html/newsFeed.html">NewsFeed</a>
+                      </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="searchNote" type="search" placeholder="Search"
+                        aria-label="Search">
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background" style="height: calc(100vh-80px); padding-top: 50px;">
+    
+    <div class="container my-3">
+       
+        <h2 class="text-center">ToDo-List</h2>
+        <hr>
+        <hr><br>
+        <div class="box">
+        <div>
+            <div class="mb-3 form-group">
+                <label for="title"><h4>Title</h4></label>
+                <input type="text" class="form-control" id="title" aria-describedby="titleHelp">
+                <div id="titleHelp" class="form-text ">Add an item in ToDo-List </div>
+            </div>
+
+            <div class="form-group">
+                <label for="description"><h4>Description</h4></label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <input type="hidden" id="saveIndex">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary my-3" style="display: none;" id="save">Save As</button>
+            <button type="submit" class="btn btn-primary my-3" id="add">Add to List</button>
+            <button class="btn btn-primary my-3" id="deleteAll" onclick="cleared()">Clear List</button>
+        </div>
+        
+        </div>
+        <hr>
+            <h2>Yours Items</h2>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="items">
+        <div id="items" style="width: 82vw; margin-left: 115px; margin-top: -16px;">
+
+            
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">SL.NO.</th>
+                        <th scope="col">Item Title </th>
+                        <th scope="col">Item Description</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    
+    <script src="../js/todo.js"></script>
+</body>
+
+</html>

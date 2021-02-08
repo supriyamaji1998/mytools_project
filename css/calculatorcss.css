@@ -1,0 +1,80 @@
+.container{
+    text-align: center;
+    margin: 6px;
+}
+
+table{
+    margin: auto;
+}
+.parent{
+    /* margin-top: 30px; */
+    text-align: center;
+    background-image: url('../img/bg-7.jpg');
+    background-size: 100%;
+    height: calc(120vh - 80px);
+    width: 99vw;
+    margin-top: 0px;
+}
+.calculator{
+    display: inline-block;
+    background-color: rgb(124, 124, 212);
+    border: 6px solid black;
+    padding: 10px;
+    border-radius: 25px;
+}
+.btncol,#addition{
+    background-color: skyblue;
+}
+#btnCE{
+    background-color: rgb(231, 69, 69);
+}
+#addition:hover,#backspace:hover{
+    background-color: orangered;
+    cursor:pointer;
+}
+#btnCE:hover{
+    background-color: red;
+}
+#submit:hover{
+    background-color:green;
+}
+#screen{
+    font-size: 26px;
+    border: 5px solid black;
+    /* background-color: skyblue; */
+}
+button{
+    height: 80px;
+    width: 94px;
+    margin: 2px;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 4px solid rgb(43, 44, 44);
+    border-radius: 10px;
+}
+button:hover{
+    background-color:orangered;
+    cursor:pointer;
+}
+#backspace{
+    height: 45px;
+    /* width: px; */
+    font-size: 23px;
+    background-color:indigo ;
+}
+#addition{
+    height: 198px;
+}
+#submit{
+    width: 210px;
+    background-color: rgb(50, 114, 50);
+}
+#parentScreen{
+    font-size: 33px;
+    height: 70px;
+    width: 438px;
+    margin: 3px;
+    border: 5px solid #564242;
+    outline: none;
+    background-color: rgb(145, 148, 148);
+}

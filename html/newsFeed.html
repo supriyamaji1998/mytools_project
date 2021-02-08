@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <!-- <script src="index.js"></script> -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/newsFeed.css">
+    <title>India News-Top india's latest news </title>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Tools</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../html/noteBook.html">NoteBook</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  " aria-current="page" href="../html/todo.html">ToDo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../html/clockIndex.html">Clock</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../html/calculator.html">Calculator</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../html/cvScreener.html">CV Screener</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="../html/newsFeed.html">NewsFeed</a>
+                      </li>
+                   
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" id="searchTxt" placeholder="Search News" aria-label="Search">
+                    <button class="btn btn-outline-success" id="submitBtn" onclick="fetchSearch(document.getElementById('searchTxt').value)" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="bg">
+    <div class="container">
+        <br>
+        <div><h2><span class="bg-primary ">Search News Based on Your Interests</span></h2><h6> below list some topics are mentioned based on common interest of  </h6></div>
+        <hr>
+        <button type="button" class="btn btn-outline-primary" id="breakingId" value="breaking-news" onclick="fetchTopic(document.getElementById('breakingId').value)">Breaking-News</button>
+        <button type="button" class="btn btn-outline-primary" id="worldId" value="world" onclick="fetchTopic(document.getElementById('worldId').value)">World</button>
+        <button type="button" class="btn btn-outline-primary" id="nationId" value="nation" onclick="fetchTopic(document.getElementById('nationId').value)">Nation</button>
+        <button type="button" class="btn btn-outline-primary" id="businessId" value="business" onclick="fetchTopic(document.getElementById('businessId').value)">Business</button>
+        <button type="button" class="btn btn-outline-primary" id="technologyId" value="technology" onclick="fetchTopic(document.getElementById('technologyId').value)">Technology</button>
+        <button type="button" class="btn btn-outline-primary" id="entertainmentId" value="entertainment" onclick="fetchTopic(document.getElementById('entertainmentId').value)">Entertainment</button>
+        <button type="button" class="btn btn-outline-primary" id="sportsId" value="sports" onclick="fetchTopic(document.getElementById('sportsId').value)">Sports</button>
+        <button type="button" class="btn btn-outline-primary" id="scienceId" value="science" onclick="fetchTopic(document.getElementById('scienceId').value)">Science</button>
+        <button type="button" class="btn btn-outline-primary" id="healthId" value="health" onclick="fetchTopic(document.getElementById('helthId').value)">Health</button>
+        
+        <hr>
+    </div>
+    <div class="container my-3">
+        <h3>Trending News <span class="badge bg-secondary"> by new india times</span></h3>
+        <hr>
+        <div class="accordion" id="accordionNews">
+          </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+    <script src="../js/newsFeed.js"></script>
+</body>
+
+</html>

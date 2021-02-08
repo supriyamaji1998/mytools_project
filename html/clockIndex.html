@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/clockCss.css">
+  <title>clock-Top Basic Using Tools | MyTools.com</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyTolls</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/noteBook.html">NoteBook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="../html/todo.html">ToDo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="../html/clockIndex.html">Clock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../html/cvScreener.html">CV Screener</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../html/newsFeed.html">NewsFeed</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="background" style="height: 800px; padding-top: 50px;">
+  <div class="container my-4">
+    <div class="jumbotron">
+      <h1 class="display-4"> <strong>Current Time:</strong> <span id="time"></span> </h1>
+      <hr>
+      <p class="lead">
+      <h4>Time is the most valuable thing a man can spend. – Theophrastus.</h4>
+      </p>
+      <p>
+      <h4> Lost time is never found again. – Benjamin Franklin</h4>Ancient Greek philosophy is known by its combination
+      of merely theoretical thoughts and practical approach. Theophrastus understood time as an accident of motion that
+      cannot be stopped or reversed, and he said that waste of time is the most extravagant and costly of all expenses.
+      </p>
+      <hr class="my-4">
+      <div class="container my-3" id="alarmId">
+        <h3>Set Your Alarm Here </h3>
+        <hr>
+        <hr>
+
+        <form>
+          <div class="form-group">
+            <label for="alarm">Add time</label>
+            <input type="text" class="form-control" id="alarm" name="alarm" placeholder="Set your time here">
+            <div id="alarmHelp" class="form-text text-muted">Set Your Time in yyyy-mm-dd hh:mm:ss Format.</div>
+          </div>
+
+          <button id="alarmSubmit" type="submit" class="btn btn-primary">Set alarm</button>
+        </form>
+        <div class="my-3">
+          <ul id="difs"> </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+  <script src="../js/clockJs.js"></script>
+</body>
+
+</html>

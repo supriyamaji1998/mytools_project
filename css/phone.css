@@ -1,0 +1,101 @@
+/* Navbar phone  */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a {
+    padding: 0px 8px;
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+}
+/* home section */
+
+#home{
+padding: 0px 22px;
+height: 357px;
+}
+#home::before{
+height: 449px;
+}
+#home p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+/* services section */
+#services{
+    flex-direction: column;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    width: 140px ;
+    padding:0px ;
+    height: auto;
+}
+#service-container::before{
+
+    height: calc(300vh - 12%);
+    
+}
+
+/* about me section */
+
+
+#aboutme .box{
+    display:block;
+}
+#aboutme-section::before{
+    height: 1000px;
+}
+ 
+#aboutme-section .bg::before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width:65%;
+    z-index: -1;
+    background:url('../img/bg1.png')no-repeat center center/cover;
+}
+
+#aboutme .box img{
+    display: block;
+    margin: auto;
+    width: 140px ;
+    padding:0px ;
+    height: auto;
+}
+#aboutme .box p{
+    
+    font-family: 'Bree Serif', serif;
+    font-size: 12px;
+}
+/* contact us section */
+
+#contact-box{
+    width: 92%;
+}
+#contact-box label{
+    font-size: 15px;
+
+}
+#contact-box p{
+    
+    width: auto;
+    font-size: 0.8rem; 
+}
+
+#contact-box p a {
+    font-size: 0.5 rem; 
+}
+
+#contact-box {
+    font-family: 'Bree Serif', serif;
+    height: 210px;
+    border-radius: 18px;
+}
+/* footer section */
+
+/* utility classes */
+.h-primary{
+    font-size: 26px;
+}
