@@ -1,4 +1,6 @@
   .background{
       background-image:url('../img/frontbg.jpg');
       background-size: 100%;
+      margin-top: -25px;
+      height: 100%;
   }
