@@ -21,6 +21,7 @@ items.addEventListener('click',(e)=>{
         screen.value=screenValue.substr(0,screenValue.length-1);
     }else if(buttomText=="="){
         try {
+            screenValue = screen.value;
             parentScreenVal=eval(screenValue);
             if(parentScreenVal== undefined){
                 parentScreen.value="Input invaid";
