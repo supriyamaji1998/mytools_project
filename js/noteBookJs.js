@@ -11,7 +11,7 @@ addBtn.addEventListener("click", function (e) {
     let checkAddTxt = addTxt.value.length;
     let checkTitle = titleInput.value.length;
 
-    if (checkAddTxt != 0) {
+    if (checkAddTxt != 0 && checkTitle != 0) {
         if (notes == null) {
             notesObj = [];
         } else {
@@ -29,9 +29,25 @@ addBtn.addEventListener("click", function (e) {
         // console.log(notesObj);
         showNotes();
     } if (checkAddTxt == 0) {
-        alert("Sorry , we can't add anthing . you did't write any note . please try again...");
+        alert("Sorry , can't add anthing . you did't write any note . please try again...");
     } else if (checkTitle == 0) {
-        alert("Your Title is Empty.Make Sure to Click 'Ok' ");
+       if(confirm("Your Titlebar is empty !!!click 'OK' to add this note or 'cancel' to Break this Operation...")){
+            if (notes == null) {
+                notesObj = [];
+            } else {
+                notesObj = JSON.parse(notes);
+            }
+            let myObj = {
+                title: titleInput.value,
+                text: addTxt.value
+            }
+            notesObj.push(myObj);
+            localStorage.setItem("notes", JSON.stringify(notesObj));
+            addTxt.value = "";
+            titleInput.value = "";
+            // console.log(notesObj);
+            showNotes();
+        }
     }
 })
 
